@@ -56,7 +56,7 @@ ext {
   licences = ['Apache-2.0']
 
   // mavenCentral
-  mavenVersion = '1.0.1'
+  mavenVersion = '1.0.2'
   mavenCentralGroupId = 'com.tencent.tcr'
   mavenCentralUserID = 'laoyuyu'
   mavenCentralUserName = 'laoyuyu'
