@@ -136,7 +136,7 @@ public class BaseExecutePool<TASK extends AbsTask> implements IPool<TASK> {
         return null;
       }
       for (TASK task : mExecuteQueue) {
-        if (task.getKey().equals(key)) {
+        if (key.equals(task.getKey())) {
           return task;
         }
       }
