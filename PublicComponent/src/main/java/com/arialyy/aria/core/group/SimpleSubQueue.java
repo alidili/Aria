@@ -15,6 +15,8 @@
  */
 package com.arialyy.aria.core.group;
 
+import android.text.TextUtils;
+
 import com.arialyy.aria.core.config.Configuration;
 import com.arialyy.aria.util.ALog;
 import com.arialyy.aria.util.CommonUtil;
@@ -59,7 +61,7 @@ final class SimpleSubQueue implements ISubQueue<AbsSubDLoadUtil> {
   }
 
   synchronized AbsSubDLoadUtil getLoaderUtil(String key) {
-    if(key.isEmpty()){
+    if(TextUtils.isEmpty(key)){
       return null;
     }
     AbsSubDLoadUtil sub = mExec.get(key);
